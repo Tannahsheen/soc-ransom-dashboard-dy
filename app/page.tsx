@@ -86,26 +86,26 @@ export default function RansomwareDashboard() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900 border-b border-purple-500/30">
+      <header className="bg-gradient-to-r from-[#7B2CBF] via-[#9D4EDD] to-[#7B2CBF] border-b border-[#9D4EDD]/30">
         <div className="container mx-auto px-6 py-8">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="p-3 bg-purple-500/20 rounded-lg border border-purple-500/30">
-                <Shield className="h-8 w-8 text-purple-300" />
+              <div className="p-3 bg-[#9D4EDD]/20 rounded-lg border border-[#9D4EDD]/30">
+                <Shield className="h-8 w-8 text-[#C77DFF]" />
               </div>
               <div>
                 <h1 className="text-3xl font-bold text-white">AF SOC | Ransomware Intelligence</h1>
-                <p className="text-purple-200 mt-1">Real-time threat monitoring & victim tracking</p>
+                <p className="text-[#E0AAFF] mt-1">Real-time threat monitoring & victim tracking</p>
               </div>
             </div>
             <div className="text-right">
-              <div className="flex items-center space-x-2 text-purple-200">
+              <div className="flex items-center space-x-2 text-[#E0AAFF]">
                 <RefreshCw className="h-4 w-4" />
                 <span className="text-sm">
                   {lastUpdated ? `Updated ${lastUpdated.toLocaleTimeString()}` : "Loading..."}
                 </span>
               </div>
-              <div className="text-xs text-purple-300 mt-1">Auto-refresh: 5 minutes</div>
+              <div className="text-xs text-[#C77DFF] mt-1">Auto-refresh: 5 minutes</div>
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function RansomwareDashboard() {
       <main className="container mx-auto px-6 py-8">
         {/* Status Bar */}
         <div className="mb-8">
-          <div className="flex items-center justify-between bg-gray-900/50 border border-purple-500/20 rounded-lg p-4">
+          <div className="flex items-center justify-between bg-gray-900/50 border border-[#9D4EDD]/20 rounded-lg p-4">
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
@@ -141,7 +141,7 @@ export default function RansomwareDashboard() {
         {loading && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {Array.from({ length: 8 }).map((_, i) => (
-              <Card key={i} className="bg-gray-900/50 border-purple-500/20">
+              <Card key={i} className="bg-gray-900/50 border-[#9D4EDD]/20">
                 <CardHeader>
                   <Skeleton className="h-6 w-3/4 bg-gray-700" />
                   <Skeleton className="h-4 w-1/2 bg-gray-700" />
@@ -164,12 +164,12 @@ export default function RansomwareDashboard() {
             {victims.map((victim, index) => (
               <Card
                 key={`${victim.victim}-${index}`}
-                className="bg-gray-900/50 border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10"
+                className="bg-gray-900/50 border-[#9D4EDD]/20 hover:border-[#C77DFF]/40 transition-all duration-300 hover:shadow-lg hover:shadow-[#9D4EDD]/10"
               >
                 <CardHeader className="pb-3">
                   <CardTitle className="text-white text-lg font-semibold flex items-start justify-between">
                     <span className="line-clamp-2">{victim.victim || "Unknown Organization"}</span>
-                    <Building className="h-4 w-4 text-purple-400 mt-1 flex-shrink-0 ml-2" />
+                    <Building className="h-4 w-4 text-[#C77DFF] mt-1 flex-shrink-0 ml-2" />
                   </CardTitle>
                   <Badge
                     variant="outline"
@@ -211,11 +211,11 @@ export default function RansomwareDashboard() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-purple-500/20 bg-gray-900/30 mt-12">
+      <footer className="border-t border-[#9D4EDD]/20 bg-gray-900/30 mt-12">
         <div className="container mx-auto px-6 py-6">
           <div className="flex items-center justify-between text-sm text-gray-400">
             <div>
-              <span className="font-semibold text-purple-300">Alias Cybersecurity</span> | SOC Intelligence Dashboard
+              <span className="font-semibold text-[#C77DFF]">Alias Cybersecurity</span> | SOC Intelligence Dashboard
             </div>
             <div className="flex items-center space-x-4">
               <span>Powered by ransomware.live</span>
