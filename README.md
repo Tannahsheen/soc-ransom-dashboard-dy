@@ -1,30 +1,29 @@
-# Ransomware feed redesign
+# Ransomware Target Dashboard
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A web-based dashboard that tracks publicly reported ransomware victim claims and maps organizations to the ransomware groups that claimed them.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/tacomaster46-7454s-projects/v0-ransomware-feed-redesign)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/xbK4PCLntz7)
+The application provides a continuously updated view of which companies have been listed by which actors, making it easier to monitor active ransomware campaigns and trends without manually tracking individual group sites.
+
+## Purpose
+
+- Centralize ransomware victim claims in one view
+- Track activity across multiple ransomware groups
+- Support threat intelligence, situational awareness, and defensive planning
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+- Live-updating dashboard
+- Victims mapped to specific ransomware groups
+- Focused on visibility and trend tracking, not attribution or validation
 
 ## Deployment
 
-Your project is live at:
+Hosted on Vercel.
 
-**[https://vercel.com/tacomaster46-7454s-projects/v0-ransomware-feed-redesign](https://vercel.com/tacomaster46-7454s-projects/v0-ransomware-feed-redesign)**
+## Disclaimer
 
-## Build your app
+Listings reflect claims made by ransomware actors and do not imply confirmed compromise.
 
-Continue building your app on:
+## Live App
 
-**[https://v0.dev/chat/projects/xbK4PCLntz7](https://v0.dev/chat/projects/xbK4PCLntz7)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+https://v0-ransomware-feed-redesign-gb1xj0qmf.vercel.app
